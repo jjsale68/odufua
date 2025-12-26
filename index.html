@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Odufua, You Are Truly Amazing</title>
+    <meta name="description" content="A friendly reminder for Odufua of her strength, kindness, and bright future.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #e91e63;
+            --primary-light: #f8bbd0;
+            --accent: #ff4081;
+            --text: #333;
+            --bg: #fffafa;
+            --light: #fdf2f8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        
+        header {
+            background: linear-gradient(rgba(233, 30, 99, 0.88), rgba(233, 30, 99, 0.95)), url('https://images.unsplash.com/photo-1516589178581-6cd7833ae7b2?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 20px 80px;
+        }
+        
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        
+        header p {
+            font-size: 1.25rem;
+            max-width: 90%;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        
+        section {
+            background: white;
+            margin-bottom: 50px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        
+        .section-header {
+            background: var(--primary-light);
+            padding: 35px 20px;
+            text-align: center;
+        }
+        
+        .section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            color: var(--primary);
+            line-height: 1.2;
+        }
+        
+        .section-content {
+            padding: 40px 25px;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 22px;
+        }
+        
+        .highlight {
+            background: var(--light);
+            padding: 28px 20px;
+            border-left: 6px solid var(--primary);
+            border-radius: 12px;
+            font-size: 1.15rem;
+            margin: 35px 0;
+            font-style: italic;
+            text-align: center;
+        }
+        
+        .videos {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 35px;
+        }
+        
+        .video-wrapper {
+            background: #f9f9f9;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+        }
+        
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 16px 16px 0 0;
+        }
+        
+        .video-caption {
+            padding: 18px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary);
+            background: white;
+        }
+        
+        .quote {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.7rem;
+            color: var(--primary);
+            margin: 45px 0;
+            padding: 0 20px;
+            line-height: 1.4;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            margin-top: 35px;
+        }
+        
+        .card {
+            background: var(--light);
+            padding: 30px 25px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .card strong {
+            color: var(--primary);
+            font-size: 1.35rem;
+            display: block;
+            margin-bottom: 12px;
+        }
+        
+        footer {
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        
+        /* Mobile Optimizations */
+        @media (max-width: 480px) {
+            header {
+                padding: 80px 15px 60px;
+            }
+            header h1 {
+                font-size: 2.8rem;
+            }
+            header p {
+                font-size: 1.15rem;
+            }
+            .section-header {
+                padding: 30px 15px;
+            }
+            .section-header h2 {
+                font-size: 2.1rem;
+            }
+            .section-content {
+                padding: 30px 20px;
+            }
+            .highlight {
+                padding: 25px 18px;
+                font-size: 1.1rem;
+            }
+            .quote {
+                font-size: 1.5rem;
+                padding: 0 15px;
+            }
+            .card {
+                padding: 25px 20px;
+            }
+        }
+        
+        @media (min-width: 481px) and (max-width: 768px) {
+            .videos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 769px) {
+            .videos {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hey Odufua, This One's for You</h1>
+        <p>He who finds Odufua finds a good thing and obtains favor from the Lord.<br>You're an incredible person, and I'm here to remind you of that.</p>
+    </header>
+
+    <div class="container">
+
+        <section id="who-you-are">
+            <div class="section-header">
+                <h2>Who You Truly Are</h2>
+            </div>
+            <div class="section-content">
+                <p>Odufua, you have such a beautiful soul, full of kindness and light. You're the kind of person who makes everyone around you feel better just by being there. Your heart is so loving and genuine, always ready to support others, listen, and care without expecting anything in return.</p>
+                
+                <p>You're an amazing friend, always showing up when it counts, offering advice that's thoughtful and wise. People are lucky to have you in their lives because you bring positivity, laughter, and real connection wherever you go.</p>
+                
+                <p>And let's talk about how good you are at what you do. All your bosses are saying such great things about you, praising your hard work, your reliability, and your positive attitude. That alone shows what a good person you are: dedicated, professional, and truly valued by those around you. You're making a real impact, and it's noticed.</p>
+                
+                <p>Never forget how special you are. You're strong, compassionate, intelligent, and full of potential. In this tough time, know that you're not alone, we're all rooting for you.</p>
+                
+                <div class="highlight">
+                    These videos are reminders of your light: your smile, your energy, the way you brighten days. Watch them and see the amazing person others see.
+                </div>
+                
+                <div class="videos">
+                    <!-- Place your 5 .mp4 files in the same folder and update filenames below -->
+                    <div class="video-wrapper">
+                        <video controls preload="metadata" poster="https://via.placeholder.com/600x400?text=Your+Bright+Smile">
+                            <source src="video1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-caption">Your smile that lights up everything</div>
+                    </div>
+                    
+                    <div class="video-wrapper">
+                        <video controls preload="metadata" poster="https://via.placeholder.com/600x400?text=Your+Kind+Energy">
+                            <source src="video2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-caption">The warmth and kindness you bring</div>
+                    </div>
+                    
+                    <div class="video-wrapper">
+                        <video controls preload="metadata" poster="https://via.placeholder.com/600x400?text=Everyday+You">
+                            <source src="video3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-caption">Just you being your awesome self</div>
+                    </div>
+                    
+                    <div class="video-wrapper">
+                        <video controls preload="metadata" poster="https://via.placeholder.com/600x400?text=Your+Strength+Shining">
+                            <source src="video4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-caption">Moments of your strength and grace</div>
+                    </div>
+                    
+                    <div class="video-wrapper">
+                        <video controls preload="metadata" poster="https://via.placeholder.com/600x400?text=Your+Joyful+Spirit">
+                            <source src="video5.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-caption">Your joyful spirit in action</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="beauty-strength">
+            <div class="section-header">
+                <h2>Your Beauty, Kindness, and Strength</h2>
+            </div>
+            <div class="section-content">
+                <p>Your beauty shines from within: in your smile, your laugh, the way you treat people with respect and care. You're not just beautiful on the outside, your soul is what makes you truly glow. You're loving, empathetic, and always thinking of others.</p>
+                
+                <p>At work, you're killing it. Your bosses rave about you because you're talented, dependable, and bring such positive energy to the team. It's proof of how good-hearted and capable you are. Keep owning that.</p>
+                
+                <p>Your strength is inspiring. Even now, as you're working through this hard time with your ex, you're showing resilience. It's okay to feel the pain, but remember how far you've come and how much more you're capable of.</p>
+                
+                <p>Take time for self-care: walks in nature, favorite music, chatting with friends. You've got this, and better days are ahead.</p>
+                
+                <div class="quote">She believed she could, so she did. And that's you, Odufua.</div>
+            </div>
+        </section>
+
+        <section id="letting-go">
+            <div class="section-header">
+                <h2>Letting Go and Moving Forward</h2>
+            </div>
+            <div class="section-content">
+                <p>It's tough to let go when your heart is still attached, but you're stronger than you know. This time is for healing, rediscovering yourself, and opening up to new possibilities. Shit happens, mistakes too, but they don't define you, they teach you.</p>
+                
+                <p>You deserve happiness that doesn't come with doubt or pain. Surround yourself with people who uplift you, like the friends who see your worth every day. Lean on us, we're here for you through it all.</p>
+                
+                <p>Focus on your goals: that degree, that new skill, that trip you've always wanted. Your career is thriving because of who you are, a good, hardworking person. Build on that.</p>
+                
+                <p>Journal your thoughts, practice gratitude, meditate. Small steps lead to big changes. You're going to come out of this even better.</p>
+                
+                <div class="quote">The best is yet to come. Trust the process.</div>
+            </div>
+        </section>
+
+        <section id="time-spark">
+            <div class="section-header">
+                <h2>Your Spark, Your Goals, Your Time</h2>
+            </div>
+            <div class="section-content">
+                <p>Your spark is still there, ready to shine brighter. Reignite it with hobbies, exercise, or learning something new. You've got so much talent and drive, especially in your career where everyone sees your potential.</p>
+                
+                <p>Money and opportunities will come back, but time is precious. Use it for things that make you happy, not holding onto the past. Set new goals: professional milestones, personal adventures, building stronger friendships.</p>
+                
+                <p>You're allowed to prioritize yourself, to say no to what doesn't serve you, and yes to what excites you. Your loving nature draws good people to you, keep nurturing that.</p>
+                
+                <p>Celebrate small wins: a good day at work, a fun outing, a meaningful conversation. You're building a life full of joy.</p>
+                
+                <div class="highlight">
+                    The person you're becoming is proud of how far you've come. Keep going.
+                </div>
+            </div>
+        </section>
+
+        <section id="encouragement">
+            <div class="section-header">
+                <h2>More Reminders for You</h2>
+            </div>
+            <div class="section-content">
+                <div class="grid">
+                    <div class="card">
+                        <strong>You Are Kind</strong>
+                        Your heart touches everyone around you.
+                    </div>
+                    <div class="card">
+                        <strong>You Are Valued</strong>
+                        Your bosses and friends see your goodness.
+                    </div>
+                    <div class="card">
+                        <strong>You Are Strong</strong>
+                        You've got the power to overcome anything.
+                    </div>
+                    <div class="card">
+                        <strong>You Are Talented</strong>
+                        Your skills are shining at work and beyond.
+                    </div>
+                    <div class="card">
+                        <strong>You Are Loved</strong>
+                        By friends who are here for you always.
+                    </div>
+                    <div class="card">
+                        <strong>You Are Capable</strong>
+                        Of achieving all your dreams and goals.
+                    </div>
+                    <div class="card">
+                        <strong>You Are Resilient</strong>
+                        Bouncing back stronger every time.
+                    </div>
+                    <div class="card">
+                        <strong>You Are Inspiring</strong>
+                        Motivating others with your positivity.
+                    </div>
+                    <div class="card">
+                        <strong>You Are Enough</strong>
+                        Just as you are, right now.
+                    </div>
+                </div>
+                
+                <div class="highlight">
+                    Odufua, you're amazing. Keep shining, keep growing, keep being you. We're in this together.
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Put together by a friend who believes in you.<br>
+        You're not alone in this. Better things are coming.<br>
+        Stay strong, Odufua. You've got this. Bringer of Blessings! 💗✨</p>
+    </footer>
+
+</body>
+</html>
